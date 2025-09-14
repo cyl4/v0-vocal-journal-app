@@ -33,7 +33,7 @@ export default function SignUpForm() {
     <>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <label className="block text-lg font-bold mb-2" style={{ color: "#1D0A49" }}>
+          <label className="block text-lg font-bold mb-2" style={{ color: "#EDC28E" }}>
             username:
           </label>
           <Input
@@ -41,18 +41,18 @@ export default function SignUpForm() {
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             placeholder="type here"
-            className="w-full p-3 border-2 rounded-lg focus:ring-0 dreamy-border magical-blur font-medium"
+            className="w-full p-3 border-2 rounded-lg focus:ring-0 dreamy-border magical-blur font-medium placeholder:text-yellow-600"
             style={{
               borderColor: "#705467",
-              backgroundColor: "#F4AF9D",
-              color: "#1D0A49",
+              backgroundColor: "#1a0a3a", // Changed to muted purple background
+              color: "#EDC28E", // Changed from dark purple to light yellow so typed text stays visible
             }}
             required
           />
         </div>
 
         <div>
-          <label className="block text-lg font-bold mb-2" style={{ color: "#1D0A49" }}>
+          <label className="block text-lg font-bold mb-2" style={{ color: "#EDC28E" }}>
             password:
           </label>
           <Input
@@ -60,11 +60,11 @@ export default function SignUpForm() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="type here"
-            className="w-full p-3 border-2 rounded-lg focus:ring-0 dreamy-border magical-blur font-medium"
+            className="w-full p-3 border-2 rounded-lg focus:ring-0 dreamy-border magical-blur font-medium placeholder:text-yellow-600"
             style={{
               borderColor: "#705467",
-              backgroundColor: "#F4AF9D",
-              color: "#1D0A49",
+              backgroundColor: "#1a0a3a", // Changed to muted purple background
+              color: "#EDC28E", // Changed from dark purple to light yellow so typed text stays visible
             }}
             required
           />
@@ -72,7 +72,7 @@ export default function SignUpForm() {
 
         <div className="flex items-end space-x-4">
           <div className="flex-1">
-            <label className="block text-lg font-bold mb-2" style={{ color: "#1D0A49" }}>
+            <label className="block text-lg font-bold mb-2" style={{ color: "#EDC28E" }}>
               first name:
             </label>
             <Input
@@ -80,11 +80,11 @@ export default function SignUpForm() {
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
               placeholder="type here"
-              className="w-full p-3 border-2 rounded-lg focus:ring-0 dreamy-border magical-blur font-medium"
+              className="w-full p-3 border-2 rounded-lg focus:ring-0 dreamy-border magical-blur font-medium placeholder:text-yellow-600"
               style={{
                 borderColor: "#705467",
-                backgroundColor: "#F4AF9D",
-                color: "#1D0A49",
+                backgroundColor: "#1a0a3a", // Changed to muted purple background
+                color: "#EDC28E", // Changed from dark purple to light yellow so typed text stays visible
               }}
               required
             />

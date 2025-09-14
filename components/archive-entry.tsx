@@ -27,7 +27,10 @@ export default function ArchiveEntry({ entry, onClick }: ArchiveEntryProps) {
   return (
     <div
       onClick={onClick}
-      className="bg-purple-900 border-2 border-orange-300 rounded-3xl p-6 cursor-pointer hover:bg-purple-800 transition-all duration-300 transform hover:scale-[1.02]"
+      className="border-2 border-orange-300 rounded-3xl p-6 cursor-pointer transition-all duration-300 transform hover:scale-[1.02]"
+      style={{ backgroundColor: "#1a0a3a" }}
+      onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#2a1a4a")}
+      onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#1a0a3a")}
     >
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-4">

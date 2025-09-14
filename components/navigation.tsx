@@ -14,8 +14,8 @@ export default function Navigation() {
   ]
 
   return (
-    <nav className="px-8 py-6">
-      <div className="flex space-x-1 rounded-full p-1 max-w-4xl" style={{ backgroundColor: "#F4D4A7" }}>
+    <nav className="py-6">
+      <div className="flex space-x-1 rounded-full p-1 px-8" style={{ backgroundColor: "#F4D4A7" }}>
         {navItems.map((item) => (
           <button
             key={item.name}

@@ -1,6 +1,9 @@
 export default function TodaysHue() {
   return (
-    <div className="bg-purple-900 border-2 border-orange-300 rounded-3xl p-6 flex flex-col items-center justify-center">
+    <div
+      className="border-2 border-orange-300 rounded-3xl p-6 flex flex-col items-center justify-center"
+      style={{ backgroundColor: "#1a0a3a" }}
+    >
       <h2 className="text-orange-300 text-2xl font-medium mb-8">today's hue</h2>
 
       {/* Today's hue - keeping it consistent as requested */}

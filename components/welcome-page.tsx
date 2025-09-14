@@ -26,42 +26,21 @@ export default function WelcomePage({ onGetStarted }: WelcomePageProps) {
       <div
         className={`absolute inset-0 transition-opacity duration-1000 ${showBackground ? "opacity-100" : "opacity-0"}`}
         style={{
-          background: "linear-gradient(135deg, #1D0A49 0%, #2A1255 30%, #1D0A49 70%, #0F051F 100%)",
+          backgroundImage: "url('/images/celestial-background.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       />
 
-      <div className="absolute inset-0">
-        <div
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full animate-pulse floating-animation"
-          style={{
-            background:
-              "radial-gradient(circle, rgba(237, 194, 142, 0.15) 0%, rgba(244, 175, 157, 0.08) 50%, transparent 100%)",
-          }}
-        />
-        <div
-          className="absolute top-1/3 left-1/3 w-64 h-64 rounded-full animate-pulse delay-1000 floating-animation"
-          style={{
-            background: "radial-gradient(circle, rgba(244, 175, 157, 0.12) 0%, transparent 70%)",
-          }}
-        />
-        <div
-          className="absolute bottom-1/4 right-1/4 w-32 h-32 rounded-full animate-pulse delay-2000"
-          style={{
-            background: "radial-gradient(circle, rgba(112, 84, 103, 0.2) 0%, transparent 60%)",
-          }}
-        />
-      </div>
-
-      <div className="absolute bottom-8 right-8 text-2xl animate-pulse ethereal-glow" style={{ color: "#EDC28E" }}>
-        ✦
-      </div>
+      <div className="absolute inset-0 bg-black/20" />
 
       {/* Main content */}
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-8">
         {/* Text content */}
         <div className="text-center mb-12">
           <div
-            className={`text-3xl md:text-4xl font-light mb-4 transition-all duration-1000 ${
+            className={`text-3xl md:text-4xl font-bold mb-4 transition-all duration-1000 ${
               showText ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
             style={{ color: "#EDC28E" }}
@@ -75,10 +54,10 @@ export default function WelcomePage({ onGetStarted }: WelcomePageProps) {
             }`}
           >
             <h1
-              className="text-8xl md:text-9xl font-script ethereal-glow"
+              className="text-9xl md:text-[12rem] font-script font-bold ethereal-glow"
               style={{
                 color: "#FFFFFF",
-                textShadow: "0 0 30px rgba(255, 255, 255, 0.8), 0 0 60px rgba(237, 194, 142, 0.4)",
+                textShadow: "0 0 30px rgba(255, 255, 255, 0.8), 0 0 60px rgba(255, 255, 255, 0.4)",
               }}
             >
               minuet

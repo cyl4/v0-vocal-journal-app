@@ -11,21 +11,21 @@ export default function VoiceLogReplay() {
   }
 
   return (
-    <div className="bg-purple-900 border-2 border-orange-300 rounded-3xl p-6">
+    <div className="border-2 border-orange-300 rounded-3xl p-6" style={{ backgroundColor: "#1a0a3a" }}>
       <div className="flex items-center justify-between">
         <h2 className="text-orange-300 text-xl font-medium">replay voice log</h2>
 
         <div className="flex space-x-3">
           <Button
             onClick={togglePlayback}
-            className="w-12 h-12 rounded-full bg-orange-300 hover:bg-orange-400 text-purple-900 flex items-center justify-center transition-all duration-300"
+            className="w-12 h-12 rounded-full bg-pink-400 hover:bg-pink-500 text-purple-900 flex items-center justify-center transition-all duration-300"
           >
             {isPlaying ? "⏸" : "▶"}
           </Button>
 
           <Button
             onClick={() => setIsPlaying(false)}
-            className="w-12 h-12 rounded-full bg-orange-300 hover:bg-orange-400 text-purple-900 flex items-center justify-center transition-all duration-300"
+            className="w-12 h-12 rounded-full bg-pink-400 hover:bg-pink-500 text-purple-900 flex items-center justify-center transition-all duration-300"
           >
             ⏹
           </Button>

@@ -95,11 +95,6 @@ export default function HomePage() {
       </main>
 
       <Footer />
-
-      {/* Star decoration */}
-      <div className="fixed bottom-8 right-8 text-2xl animate-pulse ethereal-glow" style={{ color: "#EDC28E" }}>
-        ✦
-      </div>
     </div>
   )
 }

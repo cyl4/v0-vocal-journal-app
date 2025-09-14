@@ -55,7 +55,7 @@ export default function RecordingSection({ onSubmit }: RecordingSectionProps) {
   }, [])
 
   return (
-    <div className="bg-purple-900 border-2 border-orange-300 rounded-3xl p-6">
+    <div className="border-2 border-orange-300 rounded-3xl p-6" style={{ backgroundColor: "#1a0a3a" }}>
       {/* Made heading bold */}
       <h2 className="text-orange-300 text-2xl font-bold mb-6 text-center">record your entry here</h2>
 

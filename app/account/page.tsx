@@ -76,9 +76,6 @@ export default function AccountPage() {
       </main>
 
       <Footer />
-
-      {/* Star decoration */}
-      <div className="fixed bottom-8 right-8 text-yellow-300 text-2xl animate-pulse">✦</div>
     </div>
   )
 }

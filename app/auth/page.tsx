@@ -13,13 +13,12 @@ export default function AuthPage() {
     <div
       className="min-h-screen flex items-center justify-center px-8 relative overflow-hidden"
       style={{
-        background: "linear-gradient(135deg, #1D0A49 0%, #2A1255 30%, #1D0A49 70%, #0F051F 100%)",
+        backgroundImage: "url('/images/ombre-background.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="absolute bottom-8 right-8 text-2xl animate-pulse ethereal-glow" style={{ color: "#EDC28E" }}>
-        ✦
-      </div>
-
       <div className="w-full max-w-md">
         {/* Tab buttons */}
         <div className="flex mb-8 rounded-full overflow-hidden">
@@ -29,8 +28,8 @@ export default function AuthPage() {
               activeTab === "login" ? "text-white font-bold" : "text-gray-300 hover:text-white"
             }`}
             style={{
-              backgroundColor: activeTab === "login" ? "#EDC28E" : "#705467",
-              color: activeTab === "login" ? "#1D0A49" : "#EDC28E",
+              backgroundColor: activeTab === "login" ? "#1a0a3a" : "#705467",
+              color: activeTab === "login" ? "#EDC28E" : "#EDC28E",
             }}
           >
             log in
@@ -41,8 +40,8 @@ export default function AuthPage() {
               activeTab === "signup" ? "text-white font-bold" : "text-gray-300 hover:text-white"
             }`}
             style={{
-              backgroundColor: activeTab === "signup" ? "#EDC28E" : "#705467",
-              color: activeTab === "signup" ? "#1D0A49" : "#EDC28E",
+              backgroundColor: activeTab === "signup" ? "#1a0a3a" : "#705467",
+              color: activeTab === "signup" ? "#EDC28E" : "#EDC28E",
             }}
           >
             sign up
@@ -50,7 +49,7 @@ export default function AuthPage() {
         </div>
 
         {/* Form content */}
-        <div className="rounded-3xl p-8" style={{ backgroundColor: "#EDC28E" }}>
+        <div className="rounded-3xl p-8" style={{ backgroundColor: "#1a0a3a" }}>
           {activeTab === "login" ? <LoginForm onForgotPassword={() => setShowForgotPassword(true)} /> : <SignUpForm />}
         </div>
       </div>

@@ -12,7 +12,6 @@ export default function WelcomePage({ onGetStarted }: WelcomePageProps) {
   const [showText, setShowText] = useState(false)
   const [showMinuet, setShowMinuet] = useState(false)
   const [showButton, setShowButton] = useState(false)
-  const [showFrequency, setShowFrequency] = useState(false)
 
   useEffect(() => {
     // Staggered animations as requested
@@ -62,7 +61,7 @@ export default function WelcomePage({ onGetStarted }: WelcomePageProps) {
         {/* Text content */}
         <div className="text-center mb-12">
           <div
-            className={`text-4xl md:text-5xl font-light mb-4 transition-all duration-1000 ${
+            className={`text-3xl md:text-4xl font-light mb-4 transition-all duration-1000 ${
               showText ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
             style={{ color: "#EDC28E" }}
@@ -70,16 +69,13 @@ export default function WelcomePage({ onGetStarted }: WelcomePageProps) {
             Spend a minute with
           </div>
 
-          {/* Minuet with special hover effect */}
           <div
             className={`relative transition-all duration-1000 ${
               showMinuet ? "opacity-100 translate-y-0 blur-0" : "opacity-0 translate-y-8 blur-sm"
             }`}
-            onMouseEnter={() => setShowFrequency(true)}
-            onMouseLeave={() => setShowFrequency(false)}
           >
             <h1
-              className="text-6xl md:text-8xl font-script cursor-pointer ethereal-glow sparkle-effect"
+              className="text-8xl md:text-9xl font-script ethereal-glow"
               style={{
                 color: "#FFFFFF",
                 textShadow: "0 0 30px rgba(255, 255, 255, 0.8), 0 0 60px rgba(237, 194, 142, 0.4)",
@@ -87,27 +83,6 @@ export default function WelcomePage({ onGetStarted }: WelcomePageProps) {
             >
               minuet
             </h1>
-
-            <div
-              className={`absolute -bottom-16 left-1/2 transform -translate-x-1/2 flex items-end space-x-1 transition-opacity duration-300 ${
-                showFrequency ? "opacity-40" : "opacity-0"
-              }`}
-            >
-              {[...Array(20)].map((_, i) => (
-                <div
-                  key={i}
-                  className="rounded-full animate-pulse"
-                  style={{
-                    backgroundColor: "#EDC28E",
-                    width: "3px",
-                    height: `${Math.random() * 20 + 5}px`,
-                    animationDelay: `${i * 0.1}s`,
-                    animationDuration: `${0.5 + Math.random() * 0.5}s`,
-                    boxShadow: "0 0 8px rgba(237, 194, 142, 0.6)",
-                  }}
-                />
-              ))}
-            </div>
           </div>
         </div>
 
@@ -118,8 +93,9 @@ export default function WelcomePage({ onGetStarted }: WelcomePageProps) {
         >
           <Button
             onClick={onGetStarted}
-            className="bg-transparent border-2 px-8 py-3 rounded-full text-lg font-light transition-all duration-300 transform hover:scale-105 dreamy-border magical-blur"
+            className="border-2 px-8 py-3 rounded-full text-lg font-light transition-all duration-300 transform hover:scale-105 dreamy-border magical-blur"
             style={{
+              backgroundColor: "rgba(29, 10, 73, 0.8)",
               borderColor: "#EDC28E",
               color: "#EDC28E",
             }}
@@ -129,7 +105,7 @@ export default function WelcomePage({ onGetStarted }: WelcomePageProps) {
               e.currentTarget.style.boxShadow = "0 0 25px rgba(237, 194, 142, 0.5)"
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = "transparent"
+              e.currentTarget.style.backgroundColor = "rgba(29, 10, 73, 0.8)"
               e.currentTarget.style.color = "#EDC28E"
               e.currentTarget.style.boxShadow = "0 0 20px rgba(237, 194, 142, 0.1)"
             }}

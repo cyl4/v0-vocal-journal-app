@@ -18,23 +18,31 @@ export default function LoadingPage() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900 flex flex-col items-center justify-center px-8">
-      {/* Star in bottom right */}
-      <div className="absolute bottom-8 right-8 text-yellow-300 text-2xl animate-pulse">✦</div>
+    <div
+      className="min-h-screen flex flex-col items-center justify-center px-8 relative overflow-hidden"
+      style={{
+        background: "linear-gradient(135deg, #1D0A49 0%, #2A1255 30%, #1D0A49 70%, #0F051F 100%)",
+      }}
+    >
+      <div className="absolute bottom-8 right-8 text-2xl animate-pulse ethereal-glow" style={{ color: "#EDC28E" }}>
+        ✦
+      </div>
 
-      {/* Loading image */}
-      <div className="mb-8 rounded-lg overflow-hidden shadow-2xl">
+      <div className="w-full h-full max-w-4xl max-h-4xl flex items-center justify-center mb-8">
         <Image
-          src="/images/loading-image.png"
-          alt="Loading visualization"
-          width={600}
-          height={400}
-          className="object-cover"
+          src="/images/loading-orb.gif"
+          alt="Loading orb animation"
+          width={800}
+          height={600}
+          className="object-contain w-full h-auto max-w-full max-h-[70vh]"
+          unoptimized
         />
       </div>
 
       {/* Loading text with animated dots */}
-      <div className="text-white text-2xl md:text-3xl font-light italic">loading minuet{dots}</div>
+      <div className="text-2xl md:text-3xl font-light italic" style={{ color: "#EDC28E" }}>
+        loading minuet{dots}
+      </div>
     </div>
   )
 }

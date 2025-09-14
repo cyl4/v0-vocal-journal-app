@@ -31,7 +31,7 @@ export default function RecentSections() {
     <div className="space-y-6">
       {/* Recent Hues */}
       <div className="bg-purple-900 border-2 border-orange-300 rounded-3xl p-6">
-        <h2 className="text-orange-300 text-2xl font-medium mb-4">recent hues</h2>
+        <h2 className="text-orange-300 text-2xl font-bold mb-4">recent hues</h2>
         <div className="flex space-x-4">
           {recentHues.map((hue, index) => (
             <div
@@ -45,7 +45,7 @@ export default function RecentSections() {
 
       {/* Recent Tunes */}
       <div className="bg-purple-900 border-2 border-orange-300 rounded-3xl p-6">
-        <h2 className="text-orange-300 text-2xl font-medium mb-4">recent tunes</h2>
+        <h2 className="text-orange-300 text-2xl font-bold mb-4">recent tunes</h2>
         <div className="text-orange-200 space-y-2">
           <p className="italic">{"<insert list of generated songs from previous voice logs>"}</p>
           {recentTunes.map((tune, index) => (

@@ -19,31 +19,31 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="fixed bottom-0 left-0 right-0 px-8 py-4" style={{ backgroundColor: "#8B7355" }}>
-        <div className="flex justify-between items-center" style={{ color: "#F4D4A7" }}>
-          <div className="text-lg font-medium">shortcuts</div>
+      <footer className="fixed bottom-0 left-0 right-0 px-8 py-4" style={{ backgroundColor: "#F4AF9D" }}>
+        <div className="flex justify-between items-center">
+          <div className="text-lg font-medium text-white ethereal-glow">shortcuts</div>
           <div className="flex space-x-8">
             <button
               onClick={handleLogout}
-              className="transition-colors duration-200"
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#FF6B47")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "#F4D4A7")}
+              className="text-lg font-medium text-white ethereal-glow transition-colors duration-200"
+              onMouseEnter={(e) => (e.currentTarget.style.color = "#1D0A49")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "#FFFFFF")}
             >
               log out
             </button>
             <button
               onClick={handleDownloadReport}
-              className="transition-colors duration-200"
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#FF6B47")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "#F4D4A7")}
+              className="text-lg font-medium text-white ethereal-glow transition-colors duration-200"
+              onMouseEnter={(e) => (e.currentTarget.style.color = "#1D0A49")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "#FFFFFF")}
             >
               download overall report
             </button>
             <button
               onClick={() => setShowAboutUs(true)}
-              className="transition-colors duration-200"
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#FF6B47")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "#F4D4A7")}
+              className="text-lg font-medium text-white ethereal-glow transition-colors duration-200"
+              onMouseEnter={(e) => (e.currentTarget.style.color = "#1D0A49")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "#FFFFFF")}
             >
               about us
             </button>

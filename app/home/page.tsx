@@ -40,18 +40,27 @@ export default function HomePage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900">
+    <div
+      className="min-h-screen"
+      style={{
+        background: "linear-gradient(135deg, #271051 0%, #2A1255 30%, #271051 70%, #0F051F 100%)",
+      }}
+    >
       <Navigation />
 
       <main className="px-8 py-6 pb-24">
         {/* Welcome Header */}
         <div className="mb-8">
-          <h1 className="text-white text-4xl md:text-5xl font-light mb-2">
-            Welcome to your <span className="italic underline">minuet</span>!
+          <h1 className="text-4xl md:text-5xl font-bold mb-2" style={{ color: "#EDC28E" }}>
+            Welcome to your <span className="font-bold">minuet</span>!
           </h1>
-          <p className="text-orange-200 text-xl">{currentDate}</p>
+          <p className="text-xl font-bold" style={{ color: "#FFFFFF" }}>
+            {currentDate}
+          </p>
           <div className="mt-4">
-            <span className="text-orange-200 text-lg">daily report status: </span>
+            <span className="text-2xl font-bold" style={{ color: "#EDC28E" }}>
+              daily report status:{" "}
+            </span>
             <span
               className={`text-lg font-medium ${
                 reportStatus === "idle"
@@ -88,7 +97,9 @@ export default function HomePage() {
       <Footer />
 
       {/* Star decoration */}
-      <div className="fixed bottom-8 right-8 text-yellow-300 text-2xl animate-pulse">✦</div>
+      <div className="fixed bottom-8 right-8 text-2xl animate-pulse ethereal-glow" style={{ color: "#EDC28E" }}>
+        ✦
+      </div>
     </div>
   )
 }

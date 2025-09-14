@@ -63,7 +63,10 @@ export default function ArchivePage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900">
+    <div
+      className="min-h-screen"
+      style={{ background: "linear-gradient(135deg, #271051 0%, #2A1255 30%, #271051 70%, #0F051F 100%)" }}
+    >
       <Navigation />
 
       <main className="px-8 py-6 pb-24">

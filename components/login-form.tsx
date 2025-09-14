@@ -26,7 +26,7 @@ export default function LoginForm({ onForgotPassword }: LoginFormProps) {
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       <div>
-        <label className="block text-lg font-medium mb-2" style={{ color: "#1D0A49" }}>
+        <label className="block text-lg font-bold mb-2" style={{ color: "#1D0A49" }}>
           username:
         </label>
         <Input
@@ -34,10 +34,10 @@ export default function LoginForm({ onForgotPassword }: LoginFormProps) {
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           placeholder="type here"
-          className="w-full p-3 border-2 rounded-lg focus:ring-0 dreamy-border magical-blur"
+          className="w-full p-3 border-2 rounded-lg focus:ring-0 dreamy-border magical-blur font-medium"
           style={{
             borderColor: "#705467",
-            backgroundColor: "#EDC28E",
+            backgroundColor: "#F4AF9D",
             color: "#1D0A49",
           }}
           required
@@ -45,7 +45,7 @@ export default function LoginForm({ onForgotPassword }: LoginFormProps) {
       </div>
 
       <div>
-        <label className="block text-lg font-medium mb-2" style={{ color: "#1D0A49" }}>
+        <label className="block text-lg font-bold mb-2" style={{ color: "#1D0A49" }}>
           password:
         </label>
         <Input
@@ -53,10 +53,10 @@ export default function LoginForm({ onForgotPassword }: LoginFormProps) {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="type here"
-          className="w-full p-3 border-2 rounded-lg focus:ring-0 dreamy-border magical-blur"
+          className="w-full p-3 border-2 rounded-lg focus:ring-0 dreamy-border magical-blur font-medium"
           style={{
             borderColor: "#705467",
-            backgroundColor: "#EDC28E",
+            backgroundColor: "#F4AF9D",
             color: "#1D0A49",
           }}
           required
